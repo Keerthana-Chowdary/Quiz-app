@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Quizzes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+        margin: 0;
+       min-height:100dvh; /* vh oddu mbl frndly kadu */
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:
+        radial-gradient(circle at top left,#39115b 0%,transparent 30%),
+        radial-gradient(circle at bottom right,#0b3c74 0%,transparent 25%),
+        linear-gradient(135deg,#050816,#170022,#090014);
+      /* overflow:hidden; */
+      overflow-x:hidden;
+      font-family:'Poppins',sans-serif;
+      position:relative;
+    }
+
+    .bg-circle{
+      position:absolute;
+      border:4px solid;
+      border-radius:50%;
+      opacity:.7;
+      filter:blur(.3px);
+    }
+
+    .circle1{
+      width:160px;
+      height:160px;
+      border-color:#ff3cac;
+      top:-50px;
+      left:120px;
+    }
+
+    .circle2{
+      width:180px;
+      height:180px;
+      border-color:#00d2ff;
+      /* bottom:-0.6px; */
+      left:40px;
+    }
+
+    .circle3{
+      width:130px;
+      height:130px;
+      border-color:#7c4dff;
+      bottom:20px;
+      right:-40px;
+    }
+
+    .hero{
+      width:92%;
+      max-width:1350px;
+      min-height:620px;
+      background:rgba(10, 3, 25, 0.78);
+      border-radius:40px;
+      position:relative;
+      overflow:hidden;
+      padding:40px 70px;
+      margin: 0 auto;
+      border:3px solid rgba(255,255,255,0.08);
+
+      backdrop-filter:blur(15px);
+      -webkit-backdrop-filter:blur(15px);
+
+      box-shadow:
+        0 0 20px rgba(255,0,170,.25),
+        0 0 40px rgba(0,255,255,.12),
+        inset 0 0 25px rgba(255,255,255,.04);
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:100%;
+      height:180px;
+      bottom:0;
+      left:0;
+      background:
+        linear-gradient(to top, rgba(0,0,0,.25), transparent);
+      pointer-events:none;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:40px;
+      padding:3px;
+      background:linear-gradient(135deg, #4facfe, #8f5bff, #ff3cac);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite:xor;
+      mask-composite:exclude;
+      pointer-events:none;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:70px;
+      position:relative;
+      z-index:2;
+    }
+
+    .logo{
+      width:65px;
+      height:65px;
+      border-radius:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:linear-gradient(135deg, rgba(0,234,255,.18), rgba(255,0,200,.15));
+      border:1px solid rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      box-shadow:
+        0 0 20px rgba(0,234,255,.25),
+        inset 0 0 10px rgba(255,255,255,.04);
+      overflow:hidden;
+      transition:.35s ease;
+    }
+
+    .logo img{
+      width: 80px;
+      height:80px;
+      object-fit:contain;
+      filter:drop-shadow(0 0 10px rgba(0,234,255,.45));
+      transition:.35s ease;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:55px;
+      list-style:none;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#fff;
+      font-size:14px;
+      letter-spacing:1px;
+      font-weight:500;
+      transition:.3s ease;
+      position:relative;
+    }
+
+    .nav-links a:hover{
+      color:#00eaff;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:2px;
+      background:#00eaff;
+      transition:.3s;
+    }
+
+    .nav-links a:hover::after{
+      width:100%;
+    }
+
+    .content{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:40px;
+      position:relative;
+      z-index:2;
+    }
+
+    .center{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+    }
+
+    .center h1{
+      font-size:95px;
+      line-height:0.95;
+      font-weight:800;
+      text-transform:uppercase;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .center h1 span{
+      display:block;
+    }
+
+    .center .online{
+      color:#0077ff;
+      text-shadow:0 0 25px rgba(0,119,255,.5);
+    }
+
+    .center .quiz{
+      color:white;
+    }
+
+    .center p{
+      max-width:700px;
+      color:#cfcfcf;
+      font-size:20px;
+      line-height:1.8;
+      margin:50px 0;
+    }
+
+
+    .btn{
+      padding:16px 34px;
+      border-radius:40px;
+      border:none;
+      cursor:pointer;
+      font-size:15px;
+      font-weight:600;
+      transition:.35s ease;
+    }
+
+    .primary{
+      background:linear-gradient(135deg,#00c6ff,#0072ff);
+      color:#fff;
+      box-shadow:0 10px 25px rgba(0,114,255,.35);
+    }
+
+    .primary:hover{
+      transform:translateY(-4px);
+      box-shadow:0 15px 35px rgba(0,114,255,.45);
+    }
+/* QUIZ */
+    .hidden{
+      display:none;
+    }
+/* TITLE */
+
+.quiz-title{
+
+   text-align:center;
+
+   color:white;
+
+   margin:30px 0;
+
+   font-size:42px;
+}
+
+
+
+/* DROPDOWN */
+
+.dropdown{
+
+   margin-bottom:30px;
+}
+
+/* DROPDOWN HEADER */
+
+.dropdown-header{
+
+   display:flex;
+
+   justify-content:space-between;
+
+   align-items:center;
+
+   padding:22px 28px;
+
+   border-radius:24px;
+
+   background:
+      rgba(255,255,255,.05);
+
+   border:
+      1.5px solid rgba(255,255,255,.08);
+
+   backdrop-filter:blur(15px);
+
+   cursor:pointer;
+
+   transition:
+      transform .35s ease,
+      box-shadow .35s ease,
+      border-color .35s ease;
+
+   position:relative;
+
+   overflow:hidden;
+}
+
+
+
+/* GLOW BORDER */
+
+.dropdown-header::before{
+
+   content:"";
+
+   position:absolute;
+
+   inset:0;
+
+   border-radius:24px;
+
+   padding:1.5px;
+
+   background:
+      linear-gradient(
+         135deg,
+         rgba(0,234,255,.8),
+         rgba(143,91,255,.8),
+         rgba(255,60,172,.8)
+      );
+
+   mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+   -webkit-mask-composite:xor;
+
+   mask-composite:exclude;
+
+   opacity:.45;
+
+   transition:.35s ease;
+
+   pointer-events:none;
+}
+
+
+
+/* HOVER */
+
+.dropdown-header:hover{
+
+   transform:translateY(-4px);
+
+   border-color:#00eaff;
+
+   box-shadow:
+      0 0 20px rgba(0,234,255,.18),
+      0 0 45px rgba(143,91,255,.12);
+}
+
+.dropdown-header:hover::before{
+
+   opacity:1;
+}
+.dropdown-header h2{
+
+   color:white;
+
+   font-size:24px;
+}
+
+.arrow{
+
+   color:#00eaff;
+
+   font-size:20px;
+
+   transition:.3s ease;
+}
+
+
+
+/* CONTENT */
+
+.dropdown-content{
+
+   display:none;
+
+   margin-top:25px;
+}
+
+.dropdown-content.show{
+
+   display:flex;
+
+   flex-wrap:wrap;
+
+   justify-content:center;
+
+   gap:30px;
+}
+
+
+
+/* CATEGORY CARD */
+
+.cat{
+
+   width:290px;
+
+   padding:24px;
+
+   border-radius:24px;
+
+   background:
+      rgba(255,255,255,.05);
+
+   border:
+      1px solid rgba(255,255,255,.08);
+
+   backdrop-filter:blur(14px);
+
+   text-align:center;
+
+   transition:.35s ease;
+}
+
+.cat:hover{
+
+   transform:translateY(-8px);
+
+   border-color:#00eaff;
+
+   box-shadow:
+      0 0 30px rgba(0,234,255,.2);
+}
+
+.cat h2{
+
+   color:white;
+
+   margin-bottom:15px;
+}
+
+.cat p{
+
+   color:#d8d8d8;
+
+   line-height:1.7;
+
+   font-size:15px;
+
+   margin-bottom:20px;
+}
+
+
+
+/* LEVELS */
+
+.lvl{
+
+   display:flex;
+
+   justify-content:center;
+
+   gap:12px;
+
+   flex-wrap:wrap;
+}
+
+.lvl a{
+
+   text-decoration:none;
+
+   color:white;
+
+   padding:8px 16px;
+
+   border-radius:30px;
+
+   background:
+      rgba(255,255,255,.08);
+
+   transition:.3s ease;
+}
+
+.lvl a:hover{
+
+   transform:translateY(-3px);
+}
+
+.lvl a.active{
+
+   background:
+      linear-gradient(
+         135deg,
+         #00c6ff,
+         #0072ff
+      );
+
+   box-shadow:
+      0 0 20px rgba(0,234,255,.3);
+}
+
+
+
+/* BUTTON */
+
+.start-btn{
+
+   margin-top:22px;
+
+   padding:12px 24px;
+
+   border:none;
+
+   border-radius:30px;
+
+   background:
+      linear-gradient(
+         135deg,
+         #00c6ff,
+         #0072ff
+      );
+
+   color:white;
+
+   font-weight:600;
+
+   cursor:pointer;
+
+   transition:.35s ease;
+}
+
+.start-btn:disabled{
+
+   opacity:.4;
+
+   cursor:not-allowed;
+
+   background:rgb(139, 136, 136);
+
+   box-shadow:none;
+}
+
+
+
+.lvl a{
+   padding:8px 16px;
+   border-radius:12px;
+   text-decoration:none;
+   color:white;
+   background:rgba(255,255,255,.12);
+   transition:.3s ease;
+   border:1px solid transparent;
+}
+.lvl a:hover{
+   transform:translateY(-3px);
+   background:rgba(255,255,255,.2);
+}
+.lvl a.active{
+   background:
+      linear-gradient(
+         135deg,
+         #00c6ff,
+         #0072ff
+      );
+   border-color:#00eaff;
+   box-shadow:
+      0 0 20px rgba(0,234,255,.35);
+}
+.start-btn:disabled{
+    padding: 10px;
+    border-radius: 9px;
+    margin: 1rem;
+   opacity:.45;
+   cursor:not-allowed;
+   background:gray;
+   box-shadow:none;
+   transform:none;
+   color:red;
+}
+.start-btn.enabled{
+        padding: 10px;
+    border-radius: 9px;
+    margin: 1rem;
+   opacity:1;
+   cursor:pointer;
+   
+}
+.b-wrap{  /* vere vatilo kuda responsive ga untadi*/
+   display:flex;
+   justify-content:center;
+}
+
+.arrow{
+   color:#00eaff;
+   font-size:20px;
+   transition:.3s ease;
+}
+
+
+
+/* ROTATE WHEN OPEN */
+.arrow.rotate{
+   transform:rotate(180deg);
+}
+   
+
+    @media(max-width:1100px){
+      .hero{
+        padding:40px;
+        width:90%;
+      }
+
+      .content{
+        flex-direction:column;
+        text-align:center;
+      }
+      nav{
+              margin-bottom:30px;
+      }
+
+      .center p{
+        margin:auto;
+        margin-bottom:30px;
+        font-size: 27px;
+      }
+
+      .buttons{
+        justify-content:center;
+      }
+
+      .center h1{
+        font-size:72px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .nav-links{
+        gap:20px;
+      }
+      .btn{
+    margin: 1rem;
+}
+
+/*  QUIZ */
+   .categories{
+      flex-wrap:wrap;
+      gap:25px;
+      margin-top:25px;
+   }
+
+   .cat{
+      width:280px;
+      padding:22px;
+   }
+
+   .cat h2{
+      font-size:22px;
+   }
+
+   .lvl{
+      gap:12px;
+      flex-wrap:wrap;
+   }
+
+   .lvl a{
+      font-size:13px;
+      padding:7px 14px;
+   }
+
+   .start-btn{
+      width:100%;
+      margin-top:18px;
+   }
+}
+
+@media(max-width:700px){
+
+   body{
+      padding:20px 0;
+   }
+
+   .hero{
+      width:90%;
+      padding:20px 22px;
+      border-radius:40px;
+      min-height:auto;
+   }
+
+   nav{
+      flex-direction:column;
+      gap:15px;
+      margin-bottom:20px;
+   }
+
+   .center h1{
+      font-size:52px;
+      gap:.3rem;
+   }
+
+   .center p{
+      font-size:16px;
+      line-height:1.6;
+
+      margin:15px 0;
+
+      max-width:100%;
+   }
+ .circle1{
+    display: none; 
+  }
+
+  .circle2{
+    display: none;
+  }
+
+  .circle3{
+    display: none;
+  }
+
+/* QUIZ */
+ .categories{
+      flex-direction:column;
+      gap:20px;
+      width:100%;
+   }
+
+   .cat{
+      width:100%;
+      max-width:320px;
+      padding:20px;
+      border-radius:20px;
+   }
+
+   .cat h2{
+      font-size:20px;
+      margin-bottom:18px;
+   }
+
+   .lvl{
+      gap:10px;
+      justify-content:center;
+      flex-wrap:wrap;
+   }
+
+   .lvl a{
+      font-size:12px;
+      padding:7px 12px;
+   }
+
+   .start-btn{
+      width:100%;
+      padding:12px;
+      font-size:14px;
+      margin-top:16px;
+   }
+
+      .dropdown-header{
+
+      padding:16px 18px;
+   }
+
+   .dropdown-header h2{
+
+      font-size:18px;
+   }
+
+   .quiz-title{
+
+      font-size:32px;
+   }
+
+   .cat{
+
+      width:100%;
+   }
+
+   .cat p{
+
+      font-size:14px;
+   }
+}
+
+
+
+
+/* =========================
+   QUIZ READY SCREEN
+========================= */
+
+.ready-screen{
+
+   position:fixed;
+
+   inset:0;
+
+   background:
+      rgba(0,0,0,.72);
+
+   backdrop-filter:blur(16px);
+
+   display:flex;
+
+   justify-content:center;
+
+   align-items:center;
+
+   z-index:99999;
+
+   opacity:0;
+
+   visibility:hidden;
+
+   transition:.45s ease;
+}
+
+
+
+/* SHOW */
+
+.ready-screen.show{
+
+   opacity:1;
+
+   visibility:visible;
+}
+
+
+
+/* CARD */
+
+.ready-card{
+
+   width:90%;
+
+   max-width:520px;
+
+   padding:45px 35px;
+
+   border-radius:35px;
+
+   background:
+      rgba(10,3,25,.88);
+
+   border:
+      1.5px solid rgba(255,255,255,.08);
+
+   backdrop-filter:blur(20px);
+
+   position:relative;
+
+   overflow:hidden;
+
+   text-align:center;
+
+   box-shadow:
+      0 0 30px rgba(0,234,255,.18),
+      0 0 60px rgba(143,91,255,.08);
+}
+
+
+
+/* GLOW */
+
+.ready-glow{
+
+   position:absolute;
+
+   width:260px;
+
+   height:260px;
+
+   background:
+      radial-gradient(
+         circle,
+         rgba(0,234,255,.22),
+         transparent 70%
+      );
+
+   top:-100px;
+
+   right:-70px;
+}
+
+
+
+/* TITLE */
+
+.ready-card h1{
+
+   color:#00eaff;
+
+   font-size:42px;
+
+   margin-bottom:35px;
+
+   text-shadow:
+      0 0 20px rgba(0,234,255,.45);
+}
+
+
+
+/* DETAILS */
+
+.ready-details{
+
+   margin-bottom:35px;
+}
+
+.ready-details p{
+
+   color:white;
+
+   font-size:18px;
+
+   margin:16px 0;
+
+   letter-spacing:.5px;
+}
+
+.ready-details span{
+
+   color:#00eaff;
+
+   font-weight:600;
+}
+
+
+
+/* COUNTDOWN */
+
+.count-number{
+
+   font-size:110px;
+
+   color:white;
+
+   font-weight:800;
+
+   text-shadow:
+      0 0 30px rgba(255,255,255,.4);
+
+   animation:
+      pulseCount 1s ease infinite;
+}
+
+
+
+/* ANIMATION */
+
+@keyframes pulseCount{
+
+   0%{
+
+      transform:scale(.7);
+
+      opacity:.4;
+   }
+
+   50%{
+
+      transform:scale(1);
+
+      opacity:1;
+   }
+
+   100%{
+
+      transform:scale(1.25);
+
+      opacity:.5;
+   }
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+   .ready-card{
+
+      padding:35px 22px;
+   }
+
+   .ready-card h1{
+
+      font-size:30px;
+   }
+
+   .ready-details p{
+
+      font-size:15px;
+   }
+
+   .count-number{
+
+      font-size:75px;
+   }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="bg-circle circle1"></div>
+  <div class="bg-circle circle2"></div>
+  <div class="bg-circle circle3"></div>
+
+
+<!-- READY SCREEN -->
+
+<div class="ready-screen">
+
+   <div class="ready-card">
+
+      <div class="ready-glow"></div>
+
+      <h1>
+         QUIZ READY
+      </h1>
+
+      <div class="ready-details">
+
+         <p>
+            Topic :
+            <span id="readyTopic"></span>
+         </p>
+
+         <p>
+            Difficulty :
+            <span id="readyDifficulty"></span>
+         </p>
+
+         <p>
+            Questions :
+            <span>10</span>
+         </p>
+
+         <p>
+            Time :
+            <span id="readyTime"></span>
+         </p>
+
+      </div>
+
+      <div class="count-number">
+         3
+      </div>
+
+   </div>
+
+</div>
+
+
+  <section class="hero">
+    <nav>
+      <div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/050/703/026/small/speech-bubble-for-comic-text-quiz-cartoon-comic-sign-effects-explosion-png.png" alt="Logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#quizzes" class="quizzes">Quizzes</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="center">
+        <h1>
+          <span class="online">Online</span>
+          <span class="quiz">Quizzes</span>
+        </h1>
+
+        <p>
+          Challenge yourself with interactive quizzes, compete with friends,
+          improve your knowledge, and enjoy a modern learning experience.
+        </p>
+
+        <div class="buttons">
+          <button class="btn primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    
+<!-- QUIZ -->
+    <div id="quizzes" class="hidden">
+
+   <h1 class="quiz-title">
+      Choose a Category
+   </h1>
+
+   <!-- WEB TECHNOLOGIES -->
+
+   <div class="dropdown">
+
+      <div class="dropdown-header">
+         <h2>🌐 Web Technologies</h2>
+         <span class="arrow">▼</span>
+      </div>
+
+      <div class="dropdown-content">
+
+         <!-- HTML -->
+         <div class="cat">
+
+            <h2>HTML</h2>
+
+            <p>
+               Master semantic tags, forms,
+               multimedia, accessibility,
+               and modern webpage structure.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+         </div>
+
+
+         <!-- CSS -->
+         <div class="cat">
+
+            <h2>CSS</h2>
+
+            <p>
+               Explore layouts, flexbox,
+               grid, animations,
+               responsiveness, and styling.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+         </div>
+
+
+         <!-- JS -->
+         <div class="cat">
+
+            <h2>JavaScript</h2>
+
+            <p>
+               Practice DOM manipulation,
+               events, ES6, logic building,
+               and interactive UI concepts.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+   <!-- PROGRAMMING LANGUAGES -->
+
+   <div class="dropdown">
+
+      <div class="dropdown-header">
+
+         <h2>💻 Programming Languages</h2>
+
+         <span class="arrow">▼</span>
+
+      </div>
+
+      <div class="dropdown-content">
+
+         <!-- C -->
+         <div class="cat">
+
+            <h2>C</h2>
+
+            <p>
+               Learn memory handling,
+               loops, arrays, pointers,
+               and core programming basics.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+         <div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+         </div>
+
+
+         <!-- PYTHON -->
+         <div class="cat">
+
+            <h2>Python</h2>
+
+            <p>
+               Solve problems using
+               Python syntax, functions,
+               OOP, and data structures.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+         </div>
+
+
+         <!-- JAVA -->
+         <div class="cat">
+
+            <h2>Java</h2>
+
+            <p>
+               Practice OOP concepts,
+               classes, methods,
+               collections, and logic building.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+         </div>
+
+
+         <!-- SQL -->
+         <div class="cat">
+
+            <h2>SQL</h2>
+
+            <p>
+               Improve querying skills using
+               joins, filters, aggregation,
+               and database operations.
+            </p>
+
+            <div class="lvl">
+
+               <a href="#" class="easy">
+                  Easy
+               </a>
+
+               <a href="#" class="medium">
+                  Medium
+               </a>
+
+               <a href="#" class="hard">
+                  Hard
+               </a>
+
+            </div>
+<div class="b-wrap">
+            <button class="start-btn" disabled>
+               Start Quiz
+            </button>
+</div>
+
+
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
+  </section>
+
+
+
+<script>
+const btn = document.querySelector('.btn');
+const quizLink = document.querySelector('.quizzes');
+const quizzes = document.querySelector('#quizzes');
+
+function showQuizzes(){
+
+   quizzes.style.display = "block";
+
+   quizzes.scrollIntoView({
+      behavior:'smooth'
+   });
+}
+
+btn.addEventListener('click', showQuizzes);
+
+quizLink.addEventListener('click', (e) => {
+   e.preventDefault(); //redirect avvakunda undaniki
+
+   showQuizzes();
+});
+
+const car = document.querySelectorAll('.cat');
+car.forEach((card) => {
+   const levels = card.querySelectorAll('.lvl a');
+   const startBtn =
+      card.querySelector('.start-btn');
+   let selectedDifficulty = null;
+   levels.forEach((level) => {
+      level.addEventListener('click', (e) => {
+         e.preventDefault();
+         levels.forEach((l) => {
+            l.classList.remove('active');
+         });
+         level.classList.add('active');
+         selectedDifficulty =
+            level.textContent;
+         startBtn.disabled = false;
+         startBtn.classList.add('enabled');
+      });
+   });
+});
+
+/* DROPDOWN */
+
+const dropdownss =
+document.querySelectorAll('.dropdown');
+
+dropdownss.forEach((dropdown) => {
+
+   const header =
+   dropdown.querySelector(
+      '.dropdown-header'
+   );
+
+   const content =
+   dropdown.querySelector(
+      '.dropdown-content'
+   );
+
+   const arrow =
+   dropdown.querySelector(
+      '.arrow'
+   );
+
+   header.addEventListener('click',()=>{
+
+      content.classList.toggle('show');
+      arrow.classList.toggle('rotate');
+
+   });
+
+});
+
+
+/* LEVEL SELECTION + BUTTON ENABLE */
+const dropdowns =
+document.querySelectorAll('.dropdown');
+
+dropdowns.forEach((dropdown) => {
+
+   const sectionTitle =
+   dropdown.querySelector(
+      '.dropdown-header h2'
+   ).textContent;
+
+
+
+   const cards =
+   dropdown.querySelectorAll('.cat');
+
+
+
+   cards.forEach((card) => {
+
+      const topic =
+      card.querySelector('h2')
+      .textContent.trim();
+
+      const levels =
+      card.querySelectorAll('.lvl a');
+
+      const startBtn =
+      card.querySelector('.start-btn');
+
+      let selectedDifficulty = '';
+
+
+      levels.forEach((level) => {
+
+         level.addEventListener('click',(e)=>{
+            e.preventDefault();
+
+            levels.forEach((l)=>{
+               l.classList.remove('active');
+            });
+
+            level.classList.add('active');
+
+            selectedDifficulty = level.textContent.trim();
+
+            startBtn.disabled = false;
+
+         });
+
+      });
+
+
+
+      /* START QUIZ */
+
+    startBtn.addEventListener('click',()=>{
+
+   /* STORE VALUES */
+
+   const sectionKey =
+
+   sectionTitle.includes("Web")
+   ? "web"
+   : "programming";
+
+
+
+   localStorage.setItem(
+      'section',
+      sectionKey
+   );
+
+
+
+   localStorage.setItem(
+      'topic',
+      topic.toLowerCase()
+   );
+
+
+
+   localStorage.setItem(
+      'difficulty',
+      selectedDifficulty.toLowerCase()
+   );
+
+
+
+   /* READY SCREEN */
+
+   const readyScreen =
+   document.querySelector(
+      '.ready-screen'
+   );
+
+
+
+   const readyTopic =
+   document.querySelector(
+      '#readyTopic'
+   );
+
+
+
+   const readyDifficulty =
+   document.querySelector(
+      '#readyDifficulty'
+   );
+
+
+
+   const readyTime =
+   document.querySelector(
+      '#readyTime'
+   );
+
+
+
+   const countNumber =
+   document.querySelector(
+      '.count-number'
+   );
+
+
+
+   /* TIMER */
+
+   const timerMap = {
+
+      easy:"30 Seconds",
+
+      medium:"20 Seconds",
+
+      hard:"10 Seconds"
+   };
+
+
+
+   readyTopic.textContent =
+   topic;
+
+
+
+   readyDifficulty.textContent =
+   selectedDifficulty;
+
+
+
+   readyTime.textContent =
+   timerMap[
+      selectedDifficulty.toLowerCase()
+   ];
+
+
+
+   readyScreen.classList.add('show');
+
+
+
+   let count = 3;
+
+
+
+   countNumber.textContent =
+   count;
+
+
+
+   const interval =
+   setInterval(()=>{
+
+
+
+      count--;
+
+
+
+      if(count > 0){
+
+         countNumber.textContent =
+         count;
+
+      }else{
+
+         clearInterval(interval);
+
+
+
+         countNumber.textContent =
+         "GO!";
+
+
+
+         setTimeout(()=>{
+
+            window.location.href =
+            "quiz.html";
+
+         },800);
+
+      }
+
+   },1000);
+
+});
+  
+});
+
+
+      });
+</script>
+
+
+</body>
+</html>
