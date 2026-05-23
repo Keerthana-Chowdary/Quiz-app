@@ -1008,6 +1008,168 @@
    }
 }
 
+
+
+.ready-top{
+
+   width:100%;
+
+   display:flex;
+
+   justify-content:flex-start;
+
+   margin-bottom:25px;
+}
+
+.floating-home{
+
+   display:flex;
+
+   align-items:center;
+
+   justify-content:center;
+
+   gap:8px;
+
+   padding:10px 18px;
+
+   border-radius:16px;
+
+   text-decoration:none;
+
+   color:white;
+
+   font-size:13px;
+
+   font-weight:600;
+
+   letter-spacing:.4px;
+
+   background:
+      rgba(255,255,255,.05);
+
+   border:
+      1px solid rgba(255,255,255,.08);
+
+   backdrop-filter:blur(14px);
+
+   overflow:hidden;
+
+   transition:
+      transform .35s ease,
+      box-shadow .35s ease,
+      border-color .35s ease,
+      background .35s ease;
+
+   z-index:50;
+}
+
+
+
+/* GLOW BORDER */
+
+.floating-home::before{
+
+   content:"";
+
+   position:absolute;
+
+   inset:0;
+
+   border-radius:16px;
+
+   padding:1px;
+
+   background:
+      linear-gradient(
+         135deg,
+         rgba(0,234,255,.9),
+         rgba(143,91,255,.75),
+         rgba(255,60,172,.7)
+      );
+
+   mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+
+   -webkit-mask-composite:xor;
+
+   mask-composite:exclude;
+
+   opacity:.45;
+
+   transition:.35s ease;
+
+   pointer-events:none;
+}
+
+
+
+/* SOFT GLOW */
+
+.floating-home::after{
+
+   content:"";
+
+   position:absolute;
+
+   width:120px;
+
+   height:120px;
+
+   background:
+      radial-gradient(
+         circle,
+         rgba(0,234,255,.18),
+         transparent 70%
+      );
+
+   top:-40px;
+
+   right:-40px;
+
+   opacity:.7;
+
+   pointer-events:none;
+}
+
+
+
+/* HOVER */
+
+.floating-home:hover{
+
+   transform:
+      translateY(-3px)
+      scale(1.03);
+
+   border-color:#00eaff;
+
+   background:
+      rgba(255,255,255,.08);
+
+   box-shadow:
+      0 0 18px rgba(0,234,255,.16),
+      0 0 35px rgba(143,91,255,.1);
+}
+
+
+
+.floating-home:hover::before{
+
+   opacity:1;
+}
+
+
+
+/* CLICK */
+
+.floating-home:active{
+
+   transform:scale(.96);
+}
+
+
   </style>
 </head>
 <body>
@@ -1024,6 +1186,14 @@
    <div class="ready-card">
 
       <div class="ready-glow"></div>
+
+<div class="ready-top">
+
+   <a href="index.html" class="floating-home">
+      ⌂ Home
+   </a>
+
+</div>
 
       <h1>
          QUIZ READY
