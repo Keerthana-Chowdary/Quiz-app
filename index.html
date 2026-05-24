@@ -1539,8 +1539,234 @@
 
 
          </div>
+         
+      </div>
+
+      <!-- =========================
+     MOVIE INDUSTRIES
+========================= -->
+
+<div class="dropdown">
+
+   <!-- HEADER -->
+
+   <div class="dropdown-header">
+
+      <h2>🎬 Movie Industries</h2>
+
+      <span class="arrow">
+         ▼
+      </span>
+
+   </div>
+
+
+
+   <!-- CONTENT -->
+
+   <div class="dropdown-content">
+
+      <!-- TOLLYWOOD -->
+
+      <div class="cat">
+
+         <h2>🎥 Tollywood</h2>
+
+         <p>
+
+            Telugu cinema featuring
+            blockbuster entertainers,
+            pan-India action films,
+            and iconic stars.
+
+         </p>
+
+         <div class="lvl">
+
+            <a href="#">Easy</a>
+
+            <a href="#">Medium</a>
+
+            <a href="#">Hard</a>
+
+         </div>
+
+         <div class="b-wrap">
+
+            <button class="start-btn"
+            disabled>
+
+               Start Quiz
+
+            </button>
+
+         </div>
 
       </div>
+
+
+
+      <!-- BOLLYWOOD -->
+
+      <div class="cat">
+
+         <h2>🍿 Bollywood</h2>
+
+         <p>
+
+            Explore Hindi cinema with
+            superstars, iconic dialogues,
+            chartbuster songs, and
+            blockbuster movies.
+
+         </p>
+
+         <div class="lvl">
+
+            <a href="#">Easy</a>
+
+            <a href="#">Medium</a>
+
+            <a href="#">Hard</a>
+
+         </div>
+
+         <div class="b-wrap">
+
+            <button class="start-btn"
+            disabled>
+
+               Start Quiz
+
+            </button>
+
+         </div>
+
+      </div>
+
+
+
+      <!-- MOLLYWOOD -->
+
+      <div class="cat">
+
+         <h2>🎭 Mollywood</h2>
+
+         <p>
+
+            Malayalam cinema known for
+            realistic storytelling,
+            experimental filmmaking,
+            and strong performances.
+
+         </p>
+
+         <div class="lvl">
+
+            <a href="#">Easy</a>
+
+            <a href="#">Medium</a>
+
+            <a href="#">Hard</a>
+
+         </div>
+
+         <div class="b-wrap">
+
+            <button class="start-btn"
+            disabled>
+
+               Start Quiz
+
+            </button>
+
+         </div>
+
+      </div>
+
+
+
+      <!-- SANDALWOOD -->
+
+      <div class="cat">
+
+         <h2>🔥 Sandalwood</h2>
+
+         <p>
+
+            Kannada cinema featuring
+            powerful mass entertainers,
+            rooted cultural stories,
+            and pan-India hits.
+
+         </p>
+
+         <div class="lvl">
+
+            <a href="#">Easy</a>
+
+            <a href="#">Medium</a>
+
+            <a href="#">Hard</a>
+
+         </div>
+
+         <div class="b-wrap">
+
+            <button class="start-btn"
+            disabled>
+
+               Start Quiz
+
+            </button>
+
+         </div>
+
+      </div>
+
+
+
+      <!-- KOLLYWOOD -->
+
+      <div class="cat">
+
+         <h2>🎬 Kollywood</h2>
+
+         <p>
+
+            Tamil cinema packed with
+            stylish action films,
+            cinematic universes,
+            and legendary stars.
+
+         </p>
+
+         <div class="lvl">
+
+            <a href="#">Easy</a>
+
+            <a href="#">Medium</a>
+
+            <a href="#">Hard</a>
+
+         </div>
+
+         <div class="b-wrap">
+
+            <button class="start-btn"
+            disabled>
+
+               Start Quiz
+
+            </button>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
 
    </div>
 
@@ -1571,26 +1797,6 @@ quizLink.addEventListener('click', (e) => {
    showQuizzes();
 });
 
-const car = document.querySelectorAll('.cat');
-car.forEach((card) => {
-   const levels = card.querySelectorAll('.lvl a');
-   const startBtn =
-      card.querySelector('.start-btn');
-   let selectedDifficulty = null;
-   levels.forEach((level) => {
-      level.addEventListener('click', (e) => {
-         e.preventDefault();
-         levels.forEach((l) => {
-            l.classList.remove('active');
-         });
-         level.classList.add('active');
-         selectedDifficulty =
-            level.textContent;
-         startBtn.disabled = false;
-         startBtn.classList.add('enabled');
-      });
-   });
-});
 
 /* DROPDOWN */
 
@@ -1644,9 +1850,11 @@ dropdowns.forEach((dropdown) => {
 
    cards.forEach((card) => {
 
-      const topic =
-      card.querySelector('h2')
-      .textContent.trim();
+const topic =
+card.querySelector('h2')
+.textContent
+.replace(/[^\w\s]/gi,'')
+.trim();
 
       const levels =
       card.querySelectorAll('.lvl a');
@@ -1684,11 +1892,25 @@ dropdowns.forEach((dropdown) => {
 
    /* STORE VALUES */
 
-   const sectionKey =
+let sectionKey;
 
-   sectionTitle.includes("Web")
-   ? "web"
-   : "programming";
+if(sectionTitle.includes("Web")){
+
+   sectionKey = "web";
+
+}else if(
+
+   sectionTitle.includes("Programming")
+
+){
+
+   sectionKey = "programming";
+
+}else{
+
+   sectionKey = "movies";
+
+}
 
 
 

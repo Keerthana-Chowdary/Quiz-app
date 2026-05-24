@@ -3101,4 +3101,2205 @@ answer:
 
 }
 
-}};
+},
+
+movies:{
+
+tollywood:{
+
+easy:[
+
+{
+question:
+"Which actor is known as Mega Star in Tollywood?",
+
+options:[
+"Mahesh Babu",
+"Chiranjeevi",
+"Prabhas",
+"Jr NTR"
+],
+
+answer:"Chiranjeevi"
+},
+
+{
+question:
+"Which movie made Prabhas globally famous?",
+
+options:[
+"Saaho",
+"Mirchi",
+"Baahubali",
+"Salaar"
+],
+
+answer:"Baahubali"
+},
+
+{
+question:
+"Who is called Power Star?",
+
+options:[
+"Allu Arjun",
+"Pawan Kalyan",
+"Ram Charan",
+"Nani"
+],
+
+answer:"Pawan Kalyan"
+},
+
+{
+question:
+"Which Tollywood actor starred in Pushpa?",
+
+options:[
+"Ram Charan",
+"Prabhas",
+"Allu Arjun",
+"Vijay Deverakonda"
+],
+
+answer:"Allu Arjun"
+},
+
+{
+question:
+"RRR was directed by?",
+
+options:[
+"Sukumar",
+"Rajamouli",
+"Trivikram",
+"Koratala Siva"
+],
+
+answer:"Rajamouli"
+},
+
+{
+question:
+"Which actor is known as Natural Star?",
+
+options:[
+"Nani",
+"Mahesh Babu",
+"Ram Pothineni",
+"Varun Tej"
+],
+
+answer:"Nani"
+},
+
+{
+question:
+"Which actress starred in Arundhati?",
+
+options:[
+"Samantha",
+"Anushka Shetty",
+"Rashmika",
+"Kajal Aggarwal"
+],
+
+answer:"Anushka Shetty"
+},
+
+{
+question:
+"Which movie features Pushpa Raj character?",
+
+options:[
+"Pushpa",
+"KGF",
+"RRR",
+"Salaar"
+],
+
+answer:"Pushpa"
+},
+
+{
+question:
+"Which actor played Komaram Bheem in RRR?",
+
+options:[
+"Ram Charan",
+"Jr NTR",
+"Prabhas",
+"Nani"
+],
+
+answer:"Jr NTR"
+},
+
+{
+question:
+"Which Tollywood film won Oscar for song Naatu Naatu?",
+
+options:[
+"Baahubali",
+"Pushpa",
+"RRR",
+"Salaar"
+],
+
+answer:"RRR"
+}
+
+],
+
+medium:[
+
+{
+question:
+"Which Rajamouli movie starred Sunil as hero?",
+
+options:[
+"Maryada Ramanna",
+"Eega",
+"Magadheera",
+"Yamadonga"
+],
+
+answer:"Maryada Ramanna"
+},
+
+{
+question:
+"Who composed music for Pushpa?",
+
+options:[
+"Thaman",
+"MM Keeravani",
+"Anirudh",
+"Devi Sri Prasad"
+],
+
+answer:"Devi Sri Prasad"
+},
+
+{
+question:
+"Which Tollywood actor debuted with Gangotri?",
+
+options:[
+"Ram Charan",
+"Allu Arjun",
+"Naga Chaitanya",
+"Nani"
+],
+
+answer:"Allu Arjun"
+},
+
+{
+question:
+"Which movie featured the character Shiva played by Mahesh Babu?",
+
+options:[
+"Businessman",
+"Pokiri",
+"Athadu",
+"Dookudu"
+],
+
+answer:"Businessman"
+},
+
+{
+question:
+"Which director made Jersey movie?",
+
+options:[
+"Gowtam Tinnanuri",
+"Rajamouli",
+"Sukumar",
+"Trivikram"
+],
+
+answer:"Gowtam Tinnanuri"
+},
+
+{
+question:
+"Which actor is called Rebel Star?",
+
+options:[
+"Prabhas",
+"Jr NTR",
+"Chiranjeevi",
+"Nani"
+],
+
+answer:"Prabhas"
+},
+
+{
+question:
+"Which Tollywood movie featured fly revenge concept?",
+
+options:[
+"Eega",
+"Spyder",
+"Agent",
+"Pushpa"
+],
+
+answer:"Eega"
+},
+
+{
+question:
+"Which actor played Rama Raju in RRR?",
+
+options:[
+"Prabhas",
+"Ram Charan",
+"Jr NTR",
+"Allu Arjun"
+],
+
+answer:"Ram Charan"
+},
+
+{
+question:
+"Which actress starred opposite Vijay Deverakonda in Geetha Govindam?",
+
+options:[
+"Pooja Hegde",
+"Rashmika Mandanna",
+"Samantha",
+"Kajal Aggarwal"
+],
+
+answer:"Rashmika Mandanna"
+},
+
+{
+question:
+"Which movie popularized dialogue 'Taggede Le'?",
+
+options:[
+"KGF",
+"Pushpa",
+"RRR",
+"Salaar"
+],
+
+answer:"Pushpa"
+}
+
+],
+
+hard:[
+
+{
+question:
+"Which Tollywood film was India's official Oscar entry in 2022 discussions?",
+
+options:[
+"RRR",
+"Pushpa",
+"Jai Bhim",
+"Baahubali"
+],
+
+answer:"RRR"
+},
+
+{
+question:
+"Which cinematographer worked on Baahubali series?",
+
+options:[
+"Ravi Varman",
+"PS Vinod",
+"KK Senthil Kumar",
+"Tirru"
+],
+
+answer:"KK Senthil Kumar"
+},
+
+{
+question:
+"Which Rajamouli movie was inspired by reincarnation theme?",
+
+options:[
+"Eega",
+"Magadheera",
+"RRR",
+"Yamadonga"
+],
+
+answer:"Magadheera"
+},
+
+{
+question:
+"Who produced Pushpa?",
+
+options:[
+"Mythri Movie Makers",
+"DVV Entertainment",
+"Geetha Arts",
+"UV Creations"
+],
+
+answer:"Mythri Movie Makers"
+},
+
+{
+question:
+"Which Tollywood actor owns Hyderabad FC stake?",
+
+options:[
+"Mahesh Babu",
+"Vijay Deverakonda",
+"Ram Charan",
+"Nagarjuna"
+],
+
+answer:"Mahesh Babu"
+},
+
+{
+question:
+"Which movie marked Sukumar and Allu Arjun's first collaboration?",
+
+options:[
+"Arya",
+"Pushpa",
+"Julayi",
+"Vedam"
+],
+
+answer:"Arya"
+},
+
+{
+question:
+"Which Telugu actor voiced Bheem in Hindi dub of RRR promotions?",
+
+options:[
+"Jr NTR",
+"Ram Charan",
+"Nani",
+"Prabhas"
+],
+
+answer:"Jr NTR"
+},
+
+{
+question:
+"Which film industry hub is associated with Tollywood?",
+
+options:[
+"Chennai",
+"Hyderabad",
+"Mumbai",
+"Bengaluru"
+],
+
+answer:"Hyderabad"
+},
+
+{
+question:
+"Which movie revived pan-India trend strongly for Telugu cinema?",
+
+options:[
+"Arjun Reddy",
+"Baahubali",
+"Pokiri",
+"Athadu"
+],
+
+answer:"Baahubali"
+},
+
+{
+question:
+"Who directed Pushpa?",
+
+options:[
+"Trivikram",
+"Sukumar",
+"Rajamouli",
+"Koratala Siva"
+],
+
+answer:"Sukumar"
+}
+
+]
+
+},
+
+/* =========================
+   BOLLYWOOD
+========================= */
+
+bollywood:{
+
+easy:[
+
+{
+question:
+"Which actor is known as King Khan?",
+
+options:[
+"Salman Khan",
+"Shah Rukh Khan",
+"Aamir Khan",
+"Saif Ali Khan"
+],
+
+answer:"Shah Rukh Khan"
+},
+
+{
+question:
+"Which movie features the character Kabir Singh?",
+
+options:[
+"Animal",
+"Kabir Singh",
+"Pathaan",
+"War"
+],
+
+answer:"Kabir Singh"
+},
+
+{
+question:
+"Which Bollywood actor starred in Dangal?",
+
+options:[
+"Akshay Kumar",
+"Aamir Khan",
+"Ranbir Kapoor",
+"Hrithik Roshan"
+],
+
+answer:"Aamir Khan"
+},
+
+{
+question:
+"Which actress starred in Queen?",
+
+options:[
+"Deepika Padukone",
+"Kangana Ranaut",
+"Alia Bhatt",
+"Katrina Kaif"
+],
+
+answer:"Kangana Ranaut"
+},
+
+{
+question:
+"Which movie made Ranveer Singh famous as Alauddin Khilji?",
+
+options:[
+"Bajirao Mastani",
+"Padmaavat",
+"Gully Boy",
+"83"
+],
+
+answer:"Padmaavat"
+},
+
+{
+question:
+"Who played Pushpa Raj in Hindi dubbed version promotions?",
+
+options:[
+"Allu Arjun",
+"Shahid Kapoor",
+"Ranbir Kapoor",
+"Salman Khan"
+],
+
+answer:"Allu Arjun"
+},
+
+{
+question:
+"Which actor is called Bhaijaan?",
+
+options:[
+"Salman Khan",
+"Shah Rukh Khan",
+"Ajay Devgn",
+"John Abraham"
+],
+
+answer:"Salman Khan"
+},
+
+{
+question:
+"Which movie features the song Kesariya?",
+
+options:[
+"Animal",
+"Brahmastra",
+"Jawan",
+"Pathaan"
+],
+
+answer:"Brahmastra"
+},
+
+{
+question:
+"Which actor starred in Pathaan?",
+
+options:[
+"Shah Rukh Khan",
+"Ranbir Kapoor",
+"Varun Dhawan",
+"Tiger Shroff"
+],
+
+answer:"Shah Rukh Khan"
+},
+
+{
+question:
+"Which actress starred opposite Ranbir Kapoor in Yeh Jawaani Hai Deewani?",
+
+options:[
+"Alia Bhatt",
+"Deepika Padukone",
+"Kriti Sanon",
+"Kiara Advani"
+],
+
+answer:"Deepika Padukone"
+}
+
+],
+
+medium:[
+
+{
+question:
+"Which Bollywood movie won Oscar for Best Original Song in India discussions?",
+
+options:[
+"RRR",
+"Lagaan",
+"Slumdog Millionaire",
+"Taare Zameen Par"
+],
+
+answer:"RRR"
+},
+
+{
+question:
+"Who directed the movie 3 Idiots?",
+
+options:[
+"Karan Johar",
+"Rajkumar Hirani",
+"Sanjay Leela Bhansali",
+"Anurag Kashyap"
+],
+
+answer:"Rajkumar Hirani"
+},
+
+{
+question:
+"Which actor played Sanjay Dutt in Sanju?",
+
+options:[
+"Ranveer Singh",
+"Ranbir Kapoor",
+"Vicky Kaushal",
+"Shahid Kapoor"
+],
+
+answer:"Ranbir Kapoor"
+},
+
+{
+question:
+"Which film popularized dialogue 'How's the Josh?'",
+
+options:[
+"URI",
+"War",
+"Shershaah",
+"Pathaan"
+],
+
+answer:"URI"
+},
+
+{
+question:
+"Who composed music for Aashiqui 2?",
+
+options:[
+"Anirudh",
+"Mithoon",
+"ARR",
+"Pritam"
+],
+
+answer:"Mithoon"
+},
+
+{
+question:
+"Which actor starred in Gully Boy?",
+
+options:[
+"Ranveer Singh",
+"Vicky Kaushal",
+"Varun Dhawan",
+"Shahid Kapoor"
+],
+
+answer:"Ranveer Singh"
+},
+
+{
+question:
+"Which actress played Rani in Queen?",
+
+options:[
+"Alia Bhatt",
+"Kangana Ranaut",
+"Kriti Sanon",
+"Priyanka Chopra"
+],
+
+answer:"Kangana Ranaut"
+},
+
+{
+question:
+"Which Bollywood film is based on cricket world cup victory?",
+
+options:[
+"83",
+"Chak De India",
+"Dangal",
+"MS Dhoni"
+],
+
+answer:"83"
+},
+
+{
+question:
+"Which actor played Kabir in War?",
+
+options:[
+"Hrithik Roshan",
+"John Abraham",
+"Salman Khan",
+"Ranbir Kapoor"
+],
+
+answer:"Hrithik Roshan"
+},
+
+{
+question:
+"Which movie starred both SRK and Deepika after Chennai Express?",
+
+options:[
+"Pathaan",
+"Jawan",
+"Happy New Year",
+"Raees"
+],
+
+answer:"Pathaan"
+}
+
+],
+
+hard:[
+
+{
+question:
+"Which Bollywood movie was India's official Oscar entry for 2001?",
+
+options:[
+"Lagaan",
+"Swades",
+"Rang De Basanti",
+"Taare Zameen Par"
+],
+
+answer:"Lagaan"
+},
+
+{
+question:
+"Who directed Gangs of Wasseypur?",
+
+options:[
+"Anurag Kashyap",
+"Karan Johar",
+"Rajkumar Hirani",
+"Imtiaz Ali"
+],
+
+answer:"Anurag Kashyap"
+},
+
+{
+question:
+"Which actor founded Red Chillies Entertainment?",
+
+options:[
+"Aamir Khan",
+"Shah Rukh Khan",
+"Salman Khan",
+"Ajay Devgn"
+],
+
+answer:"Shah Rukh Khan"
+},
+
+{
+question:
+"Which movie marked Vicky Kaushal's breakthrough performance?",
+
+options:[
+"URI",
+"Masaan",
+"Raazi",
+"Sardar Udham"
+],
+
+answer:"Masaan"
+},
+
+{
+question:
+"Who directed Bajirao Mastani?",
+
+options:[
+"Sanjay Leela Bhansali",
+"Rajkumar Hirani",
+"Farah Khan",
+"Imtiaz Ali"
+],
+
+answer:"Sanjay Leela Bhansali"
+},
+
+{
+question:
+"Which Bollywood actor is known as Mr. Perfectionist?",
+
+options:[
+"Aamir Khan",
+"Shah Rukh Khan",
+"Akshay Kumar",
+"Ajay Devgn"
+],
+
+answer:"Aamir Khan"
+},
+
+{
+question:
+"Which film revived spy universe trend strongly in Bollywood?",
+
+options:[
+"Pathaan",
+"War",
+"Tiger Zinda Hai",
+"Ek Tha Tiger"
+],
+
+answer:"Pathaan"
+},
+
+{
+question:
+"Which actress made Bollywood debut with Student of the Year?",
+
+options:[
+"Alia Bhatt",
+"Kiara Advani",
+"Ananya Panday",
+"Janhvi Kapoor"
+],
+
+answer:"Alia Bhatt"
+},
+
+{
+question:
+"Which movie featured the fictional place Ramgarh?",
+
+options:[
+"Sholay",
+"Deewar",
+"Don",
+"Agneepath"
+],
+
+answer:"Sholay"
+},
+
+{
+question:
+"Which actor played Murad in Gully Boy?",
+
+options:[
+"Ranveer Singh",
+"Ranbir Kapoor",
+"Shahid Kapoor",
+"Varun Dhawan"
+],
+
+answer:"Ranveer Singh"
+}
+
+]
+
+},
+
+/* =========================
+   MOLLYWOOD
+========================= */
+
+mollywood:{
+
+easy:[
+
+{
+question:
+"Which actor is known as Complete Actor in Mollywood?",
+
+options:[
+"Prithviraj",
+"Mammootty",
+"Mohanlal",
+"Fahadh Faasil"
+],
+
+answer:"Mohanlal"
+},
+
+{
+question:
+"Which Malayalam movie became pan-India hit in 2024?",
+
+options:[
+"Premalu",
+"2018",
+"Lucifer",
+"Bramayugam"
+],
+
+answer:"Premalu"
+},
+
+{
+question:
+"Which actor starred in Lucifer?",
+
+options:[
+"Mammootty",
+"Mohanlal",
+"Dulquer Salmaan",
+"Tovino Thomas"
+],
+
+answer:"Mohanlal"
+},
+
+{
+question:
+"Which Malayalam actor is son of Mammootty?",
+
+options:[
+"Prithviraj",
+"Fahadh Faasil",
+"Dulquer Salmaan",
+"Nivin Pauly"
+],
+
+answer:"Dulquer Salmaan"
+},
+
+{
+question:
+"Which movie is based on Kerala floods?",
+
+options:[
+"2018",
+"Virus",
+"Drishyam",
+"Jana Gana Mana"
+],
+
+answer:"2018"
+},
+
+{
+question:
+"Which actor played Georgekutty in Drishyam?",
+
+options:[
+"Mammootty",
+"Mohanlal",
+"Dulquer Salmaan",
+"Fahadh Faasil"
+],
+
+answer:"Mohanlal"
+},
+
+{
+question:
+"Which actress starred in Premalu?",
+
+options:[
+"Anaswara Rajan",
+"Mamitha Baiju",
+"Nazriya",
+"Parvathy"
+],
+
+answer:"Mamitha Baiju"
+},
+
+{
+question:
+"Which Malayalam industry city is famous for filmmaking?",
+
+options:[
+"Kochi",
+"Hyderabad",
+"Chennai",
+"Bengaluru"
+],
+
+answer:"Kochi"
+},
+
+{
+question:
+"Which actor starred in Minnal Murali?",
+
+options:[
+"Tovino Thomas",
+"DQ",
+"Prithviraj",
+"Fahadh Faasil"
+],
+
+answer:"Tovino Thomas"
+},
+
+{
+question:
+"Which movie franchise features Georgekutty?",
+
+options:[
+"Lucifer",
+"Drishyam",
+"2018",
+"CBI"
+],
+
+answer:"Drishyam"
+}
+
+],
+
+medium:[
+
+{
+question:
+"Who directed Lucifer?",
+
+options:[
+"Jeethu Joseph",
+"Prithviraj Sukumaran",
+"Amal Neerad",
+"Alphonse Puthren"
+],
+
+answer:"Prithviraj Sukumaran"
+},
+
+{
+question:
+"Which Malayalam movie featured superhero theme?",
+
+options:[
+"2018",
+"Minnal Murali",
+"Premalu",
+"Virus"
+],
+
+answer:"Minnal Murali"
+},
+
+{
+question:
+"Which actor starred in Charlie movie?",
+
+options:[
+"Nivin Pauly",
+"Dulquer Salmaan",
+"Tovino Thomas",
+"Fahadh Faasil"
+],
+
+answer:"Dulquer Salmaan"
+},
+
+{
+question:
+"Which Mollywood actor is known for realistic performances?",
+
+options:[
+"Fahadh Faasil",
+"Salman Khan",
+"Ajith",
+"Darshan"
+],
+
+answer:"Fahadh Faasil"
+},
+
+{
+question:
+"Which Malayalam movie became India's Oscar entry in 2024 discussions?",
+
+options:[
+"2018",
+"Premalu",
+"Lucifer",
+"Bheeshma Parvam"
+],
+
+answer:"2018"
+},
+
+{
+question:
+"Who directed Drishyam?",
+
+options:[
+"Jeethu Joseph",
+"Prithviraj",
+"Amal Neerad",
+"Lijo Jose Pellissery"
+],
+
+answer:"Jeethu Joseph"
+},
+
+{
+question:
+"Which actor starred in Aavesham?",
+
+options:[
+"Fahadh Faasil",
+"Mammootty",
+"Mohanlal",
+"DQ"
+],
+
+answer:"Fahadh Faasil"
+},
+
+{
+question:
+"Which Malayalam actor acted in Sita Ramam?",
+
+options:[
+"Prithviraj",
+"Dulquer Salmaan",
+"Tovino Thomas",
+"Nivin Pauly"
+],
+
+answer:"Dulquer Salmaan"
+},
+
+{
+question:
+"Which movie popularized character Ranga?",
+
+options:[
+"Lucifer",
+"Aavesham",
+"Premalu",
+"2018"
+],
+
+answer:"Aavesham"
+},
+
+{
+question:
+"Which actress starred opposite DQ in Charlie?",
+
+options:[
+"Parvathy",
+"Nazriya",
+"Sai Pallavi",
+"Keerthy Suresh"
+],
+
+answer:"Parvathy"
+}
+
+],
+
+hard:[
+
+{
+question:
+"Which Malayalam director is known for experimental filmmaking style?",
+
+options:[
+"Lijo Jose Pellissery",
+"Rohit Shetty",
+"Atlee",
+"Rajamouli"
+],
+
+answer:"Lijo Jose Pellissery"
+},
+
+{
+question:
+"Which film revived pan-India attention towards Mollywood recently?",
+
+options:[
+"2018",
+"Drishyam",
+"Premam",
+"Lucifer"
+],
+
+answer:"2018"
+},
+
+{
+question:
+"Who directed Bramayugam?",
+
+options:[
+"Rahul Sadasivan",
+"Jeethu Joseph",
+"Prithviraj",
+"Amal Neerad"
+],
+
+answer:"Rahul Sadasivan"
+},
+
+{
+question:
+"Which actor played villain role in Pushpa and is from Mollywood?",
+
+options:[
+"Fahadh Faasil",
+"Mammootty",
+"Mohanlal",
+"Tovino Thomas"
+],
+
+answer:"Fahadh Faasil"
+},
+
+{
+question:
+"Which Malayalam movie was remade in multiple languages including Hindi?",
+
+options:[
+"Drishyam",
+"Premalu",
+"Aavesham",
+"2018"
+],
+
+answer:"Drishyam"
+},
+
+{
+question:
+"Which actor starred in Bheeshma Parvam?",
+
+options:[
+"Mammootty",
+"Mohanlal",
+"DQ",
+"Prithviraj"
+],
+
+answer:"Mammootty"
+},
+
+{
+question:
+"Which movie made Alphonse Puthren extremely popular?",
+
+options:[
+"Premam",
+"Lucifer",
+"2018",
+"Virus"
+],
+
+answer:"Premam"
+},
+
+{
+question:
+"Which Malayalam actor directed Bro Daddy?",
+
+options:[
+"Mohanlal",
+"Prithviraj Sukumaran",
+"Mammootty",
+"DQ"
+],
+
+answer:"Prithviraj Sukumaran"
+},
+
+{
+question:
+"Which Mollywood actor has strong fanbase in Telugu states too?",
+
+options:[
+"Dulquer Salmaan",
+"Fahadh Faasil",
+"Nivin Pauly",
+"Tovino Thomas"
+],
+
+answer:"Dulquer Salmaan"
+},
+
+{
+question:
+"Which movie showcased black-and-white horror fantasy style recently?",
+
+options:[
+"Bramayugam",
+"2018",
+"Lucifer",
+"Premalu"
+],
+
+answer:"Bramayugam"
+}
+
+]
+
+},
+
+/* =========================
+   SANDALWOOD
+========================= */
+
+sandalwood:{
+
+easy:[
+
+{
+question:
+"Which actor is known as Rocking Star in Sandalwood?",
+
+options:[
+"Yash",
+"Sudeep",
+"Darshan",
+"Puneeth Rajkumar"
+],
+
+answer:"Yash"
+},
+
+{
+question:
+"Which movie made Yash globally famous?",
+
+options:[
+"Kantara",
+"KGF",
+"Vikrant Rona",
+"Charlie 777"
+],
+
+answer:"KGF"
+},
+
+{
+question:
+"Which actor starred in Vikrant Rona?",
+
+options:[
+"Darshan",
+"Yash",
+"Sudeep",
+"Rakshit Shetty"
+],
+
+answer:"Sudeep"
+},
+
+{
+question:
+"Which Kannada movie features the character Rocky Bhai?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Kaatera"
+],
+
+answer:"KGF"
+},
+
+{
+question:
+"Who played Shiva in Kantara?",
+
+options:[
+"Rakshit Shetty",
+"Rishab Shetty",
+"Yash",
+"Sudeep"
+],
+
+answer:"Rishab Shetty"
+},
+
+{
+question:
+"Which actor is fondly called Appu?",
+
+options:[
+"Darshan",
+"Puneeth Rajkumar",
+"Yash",
+"Sudeep"
+],
+
+answer:"Puneeth Rajkumar"
+},
+
+{
+question:
+"Which movie featured a dog named Charlie?",
+
+options:[
+"Charlie 777",
+"KGF",
+"Kantara",
+"Vikrant Rona"
+],
+
+answer:"Charlie 777"
+},
+
+{
+question:
+"Which industry does Sandalwood refer to?",
+
+options:[
+"Kannada Film Industry",
+"Tamil Film Industry",
+"Malayalam Film Industry",
+"Telugu Film Industry"
+],
+
+answer:"Kannada Film Industry"
+},
+
+{
+question:
+"Which actor starred in Kaatera?",
+
+options:[
+"Darshan",
+"Yash",
+"Sudeep",
+"Rakshit Shetty"
+],
+
+answer:"Darshan"
+},
+
+{
+question:
+"Which movie popularized 'Violence... Violence... Violence' dialogue?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Vikrant Rona"
+],
+
+answer:"KGF"
+}
+
+],
+
+medium:[
+
+{
+question:
+"Who directed KGF series?",
+
+options:[
+"Prashanth Neel",
+"Rishab Shetty",
+"Sandeep Reddy Vanga",
+"Lokesh Kanagaraj"
+],
+
+answer:"Prashanth Neel"
+},
+
+{
+question:
+"Which movie brought pan-India attention to Sandalwood strongly?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Kaatera"
+],
+
+answer:"KGF"
+},
+
+{
+question:
+"Which actor directed and starred in Kantara?",
+
+options:[
+"Rakshit Shetty",
+"Rishab Shetty",
+"Yash",
+"Sudeep"
+],
+
+answer:"Rishab Shetty"
+},
+
+{
+question:
+"Which Kannada actor is known for hosting Bigg Boss Kannada?",
+
+options:[
+"Darshan",
+"Yash",
+"Sudeep",
+"Rakshit Shetty"
+],
+
+answer:"Sudeep"
+},
+
+{
+question:
+"Which movie featured folklore and Bhoota Kola traditions?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Vikrant Rona"
+],
+
+answer:"Kantara"
+},
+
+{
+question:
+"Which actor starred in Kirik Party?",
+
+options:[
+"Rakshit Shetty",
+"Darshan",
+"Sudeep",
+"Yash"
+],
+
+answer:"Rakshit Shetty"
+},
+
+{
+question:
+"Which actress starred opposite Yash in KGF?",
+
+options:[
+"Srinidhi Shetty",
+"Rashmika",
+"Samantha",
+"Pooja Hegde"
+],
+
+answer:"Srinidhi Shetty"
+},
+
+{
+question:
+"Which movie featured mysterious fantasy adventure setting recently?",
+
+options:[
+"Vikrant Rona",
+"Charlie 777",
+"Kantara",
+"Kaatera"
+],
+
+answer:"Vikrant Rona"
+},
+
+{
+question:
+"Which actor starred in Charlie 777?",
+
+options:[
+"Rakshit Shetty",
+"Yash",
+"Sudeep",
+"Darshan"
+],
+
+answer:"Rakshit Shetty"
+},
+
+{
+question:
+"Which Kannada actor worked in Eega as villain?",
+
+options:[
+"Sudeep",
+"Darshan",
+"Yash",
+"Rakshit Shetty"
+],
+
+answer:"Sudeep"
+}
+
+],
+
+hard:[
+
+{
+question:
+"Which director became pan-India sensation after Kantara?",
+
+options:[
+"Rishab Shetty",
+"Prashanth Neel",
+"Sandeep Vanga",
+"Atlee"
+],
+
+answer:"Rishab Shetty"
+},
+
+{
+question:
+"Which production company produced KGF?",
+
+options:[
+"Hombale Films",
+"DVV Entertainment",
+"Mythri Movie Makers",
+"Geetha Arts"
+],
+
+answer:"Hombale Films"
+},
+
+{
+question:
+"Which Kannada movie was India's Oscar entry discussion candidate recently?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Kaatera"
+],
+
+answer:"Kantara"
+},
+
+{
+question:
+"Which actor is known as Challenging Star?",
+
+options:[
+"Darshan",
+"Sudeep",
+"Yash",
+"Rakshit Shetty"
+],
+
+answer:"Darshan"
+},
+
+{
+question:
+"Which film expanded Prashanth Neel's popularity across industries?",
+
+options:[
+"KGF",
+"Kantara",
+"Charlie 777",
+"Kaatera"
+],
+
+answer:"KGF"
+},
+
+{
+question:
+"Which Kannada actor has major fanbase in Telugu industry too?",
+
+options:[
+"Yash",
+"Darshan",
+"Rakshit Shetty",
+"Sudeep"
+],
+
+answer:"Yash"
+},
+
+{
+question:
+"Which movie mixed horror, fantasy, and detective themes?",
+
+options:[
+"Vikrant Rona",
+"Kantara",
+"Charlie 777",
+"Kaatera"
+],
+
+answer:"Vikrant Rona"
+},
+
+{
+question:
+"Who directed Charlie 777?",
+
+options:[
+"Kiranraj K",
+"Rishab Shetty",
+"Prashanth Neel",
+"Suni"
+],
+
+answer:"Kiranraj K"
+},
+
+{
+question:
+"Which actor played Rocky Bhai?",
+
+options:[
+"Yash",
+"Sudeep",
+"Darshan",
+"Rakshit Shetty"
+],
+
+answer:"Yash"
+},
+
+{
+question:
+"Which Kannada movie strongly revived rooted cultural storytelling trend?",
+
+options:[
+"Kantara",
+"KGF",
+"Charlie 777",
+"Vikrant Rona"
+],
+
+answer:"Kantara"
+}
+
+]
+
+},
+
+/* =========================
+   KOLLYWOOD
+========================= */
+
+kollywood:{
+
+easy:[
+
+{
+question:
+"Which actor is known as Thalapathy?",
+
+options:[
+"Ajith",
+"Rajinikanth",
+"Vijay",
+"Suriya"
+],
+
+answer:"Vijay"
+},
+
+{
+question:
+"Which actor is called Superstar in Kollywood?",
+
+options:[
+"Kamal Haasan",
+"Ajith",
+"Rajinikanth",
+"Dhanush"
+],
+
+answer:"Rajinikanth"
+},
+
+{
+question:
+"Which movie featured the character Leo Das?",
+
+options:[
+"Master",
+"Leo",
+"Jailer",
+"Vikram"
+],
+
+answer:"Leo"
+},
+
+{
+question:
+"Who played Rolex in Vikram?",
+
+options:[
+"Suriya",
+"Vijay",
+"Ajith",
+"Dhanush"
+],
+
+answer:"Suriya"
+},
+
+{
+question:
+"Which actor starred in Jailer?",
+
+options:[
+"Rajinikanth",
+"Kamal Haasan",
+"Vijay",
+"Suriya"
+],
+
+answer:"Rajinikanth"
+},
+
+{
+question:
+"Which actor is known as Thala?",
+
+options:[
+"Ajith",
+"Vijay",
+"Suriya",
+"Dhanush"
+],
+
+answer:"Ajith"
+},
+
+{
+question:
+"Which movie made Dhanush globally popular with song Why This Kolaveri Di?",
+
+options:[
+"Asuran",
+"3",
+"VIP",
+"Karnan"
+],
+
+answer:"3"
+},
+
+{
+question:
+"Which actor starred in Ghilli?",
+
+options:[
+"Ajith",
+"Vijay",
+"Rajinikanth",
+"Suriya"
+],
+
+answer:"Vijay"
+},
+
+{
+question:
+"Which movie features jailer Tiger Muthuvel Pandian?",
+
+options:[
+"Vikram",
+"Jailer",
+"Leo",
+"Master"
+],
+
+answer:"Jailer"
+},
+
+{
+question:
+"Which actor starred in Soorarai Pottru?",
+
+options:[
+"Dhanush",
+"Ajith",
+"Suriya",
+"Vijay"
+],
+
+answer:"Suriya"
+}
+
+],
+
+medium:[
+
+{
+question:
+"Who directed Leo?",
+
+options:[
+"Atlee",
+"Lokesh Kanagaraj",
+"Nelson",
+"Shankar"
+],
+
+answer:"Lokesh Kanagaraj"
+},
+
+{
+question:
+"Which Kollywood movie popularized LCU (Lokesh Cinematic Universe)?",
+
+options:[
+"Master",
+"Vikram",
+"Jailer",
+"Beast"
+],
+
+answer:"Vikram"
+},
+
+{
+question:
+"Which actor starred in Asuran?",
+
+options:[
+"Suriya",
+"Dhanush",
+"Ajith",
+"Rajinikanth"
+],
+
+answer:"Dhanush"
+},
+
+{
+question:
+"Which movie featured agent Vikram?",
+
+options:[
+"Jailer",
+"Master",
+"Vikram",
+"Leo"
+],
+
+answer:"Vikram"
+},
+
+{
+question:
+"Which director is known for Robo/Enthiran?",
+
+options:[
+"Shankar",
+"Atlee",
+"Nelson",
+"Lokesh"
+],
+
+answer:"Shankar"
+},
+
+{
+question:
+"Which actress starred opposite Vijay in Master?",
+
+options:[
+"Rashmika",
+"Malavika Mohanan",
+"Trisha",
+"Samantha"
+],
+
+answer:"Malavika Mohanan"
+},
+
+{
+question:
+"Which actor starred in VIP (Velaiilla Pattadhari)?",
+
+options:[
+"Ajith",
+"Vijay",
+"Dhanush",
+"Suriya"
+],
+
+answer:"Dhanush"
+},
+
+{
+question:
+"Which movie featured Bhavani character?",
+
+options:[
+"Master",
+"Leo",
+"Vikram",
+"Jailer"
+],
+
+answer:"Master"
+},
+
+{
+question:
+"Who directed Jailer?",
+
+options:[
+"Atlee",
+"Nelson",
+"Lokesh Kanagaraj",
+"Shankar"
+],
+
+answer:"Nelson"
+},
+
+{
+question:
+"Which actor played JD in Master?",
+
+options:[
+"Vijay",
+"Suriya",
+"Dhanush",
+"Ajith"
+],
+
+answer:"Vijay"
+}
+
+],
+
+hard:[
+
+{
+question:
+"Which Kollywood director created the Lokesh Cinematic Universe?",
+
+options:[
+"Nelson",
+"Shankar",
+"Lokesh Kanagaraj",
+"Atlee"
+],
+
+answer:"Lokesh Kanagaraj"
+},
+
+{
+question:
+"Which film revived strong pan-India attention for Kollywood recently?",
+
+options:[
+"Master",
+"Vikram",
+"Jailer",
+"Leo"
+],
+
+answer:"Vikram"
+},
+
+{
+question:
+"Which actor played Santhanam in Vikram?",
+
+options:[
+"Vijay Sethupathi",
+"Fahadh Faasil",
+"Suriya",
+"Dhanush"
+],
+
+answer:"Vijay Sethupathi"
+},
+
+{
+question:
+"Which Kollywood actor won National Award for Asuran?",
+
+options:[
+"Ajith",
+"Dhanush",
+"Suriya",
+"Rajinikanth"
+],
+
+answer:"Dhanush"
+},
+
+{
+question:
+"Which movie connected Kaithi and Vikram universes?",
+
+options:[
+"Leo",
+"Master",
+"Vikram",
+"Jailer"
+],
+
+answer:"Vikram"
+},
+
+{
+question:
+"Who directed Kaithi?",
+
+options:[
+"Atlee",
+"Lokesh Kanagaraj",
+"Nelson",
+"Shankar"
+],
+
+answer:"Lokesh Kanagaraj"
+},
+
+{
+question:
+"Which actor starred in Jai Bhim?",
+
+options:[
+"Suriya",
+"Vijay",
+"Dhanush",
+"Ajith"
+],
+
+answer:"Suriya"
+},
+
+{
+question:
+"Which Kollywood actor debuted in Bollywood with Raanjhanaa?",
+
+options:[
+"Suriya",
+"Dhanush",
+"Vijay",
+"Ajith"
+],
+
+answer:"Dhanush"
+},
+
+{
+question:
+"Which movie featured the character Parthiban/Leo Das?",
+
+options:[
+"Master",
+"Leo",
+"Vikram",
+"Jailer"
+],
+
+answer:"Leo"
+},
+
+{
+question:
+"Which actor is famous for dialogue 'Naan oru thadava sonna...'?",
+
+options:[
+"Rajinikanth",
+"Vijay",
+"Ajith",
+"Kamal Haasan"
+],
+
+answer:"Rajinikanth"
+}
+
+]
+
+}
+}
+
+};
